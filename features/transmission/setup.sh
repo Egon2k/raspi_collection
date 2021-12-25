@@ -3,7 +3,7 @@
 echo "Installing transmission client..."
 
 # create folder structure
-sudo mkdir -p /home/pi/data/downloads/{complete,incomplete,torrents}
+mkdir -p /home/pi/data/downloads/{complete,incomplete}
 
 # install transmission daemon
 sudo apt install transmission-daemon -y
@@ -21,10 +21,9 @@ sudo usermod -aG debian-transmission debian-transmission
 sudo chgrp -R debian-transmission /home/pi/data/downloads
 
 # change folders permissions
-sudo chmod -R 750 /home/pi/data/downloads
+sudo chmod -R 550 /home/pi/data/downloads
 sudo chmod -R 770 /home/pi/data/downloads/complete
 sudo chmod -R 770 /home/pi/data/downloads/incomplete
-sudo chmod -R 770 /home/pi/data/downloads/torrents
 
 # get settings from github repo
 sudo curl https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/transmission/settings/settings.json -o /etc/transmission-daemon/settings.json
