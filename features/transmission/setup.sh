@@ -2,8 +2,6 @@
 
 echo "Installing transmission client..."
 
-sudo apt update && sudo apt upgrade -y
-
 # create folder structure
 sudo mkdir -p /home/pi/data/downloads/{torrents,complete,incomplete}
 

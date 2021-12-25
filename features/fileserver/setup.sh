@@ -1,7 +1,5 @@
 echo "Installing samba file server..."
 
-sudo apt update && sudo apt upgrade -y
-
 # install necessary packages
 sudo apt-get install samba samba-common-bin -y
 

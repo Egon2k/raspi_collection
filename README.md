@@ -29,11 +29,13 @@
 ## File Server
 
 ```
+sudo apt update && sudo apt upgrade -y
 source <(curl -s https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/fileserver/setup.sh)
 ```
 
 ## Transmission
 ```
+sudo apt update && sudo apt upgrade -y
 source <(curl -s https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/transmission/setup.sh)
 ```
 
