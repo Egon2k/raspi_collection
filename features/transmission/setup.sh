@@ -20,10 +20,6 @@ sudo chgrp -R debian-transmission /home/pi/data/downloads/complete
 sudo chmod -R 770 debian-transmission /home/pi/data/downloads/incomplete
 sudo chmod -R 770 debian-transmission /home/pi/data/downloads/complete
 
-# config
-sudo nano /etc/transmission-daemon/settings.json
-
-
 # get settings from github repo
 sudo curl https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/transmission/settings/settings.json -o /etc/transmission-daemon/settings.json
 
