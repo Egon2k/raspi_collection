@@ -39,3 +39,9 @@ sudo apt update && sudo apt upgrade -y
 source <(curl -s https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/transmission/setup.sh)
 ```
 
+
+## Fauxmo
+```
+sudo apt update && sudo apt upgrade -y
+source <(curl -s https://raw.githubusercontent.com/Egon2k/raspi_collection/main/features/fauxmo/setup.sh)
+```
