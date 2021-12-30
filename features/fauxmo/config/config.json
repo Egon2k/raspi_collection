@@ -1,0 +1,25 @@
+{
+  "FAUXMO": {
+    "ip_address": "auto"
+  },
+  "PLUGINS": {
+    "CommandLinePlugin": {
+      "DEVICES": [
+        {
+            "name": "nas",
+            "port": 49915,
+            "on_cmd": "wakeonlan 24:5e:be:24:be:02",
+            "off_cmd": ":",
+            "use_fake_state": true
+        },
+        {
+            "name": "computer",
+            "port": 49916,
+            "on_cmd": "wakeonlan e8:03:9a:e0:64:10",
+            "off_cmd": ":",
+            "use_fake_state": true
+        }
+      ]
+    }
+  }
+}

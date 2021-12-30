@@ -1,0 +1,25 @@
+#create user first:
+#  sudo useradd -r -s /bin/false fauxmo
+#
+#copy service
+#  sudo cp fauxmo.service /etc/systemd/system/fauxmo.service
+#
+#  sudo systemctl enable fauxmo.service
+#  sudo systemctl start fauxmo.service
+
+[Unit]
+Description=Fauxmo
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi/projects/python/fauxmo/
+# Fix the paths below:
+ExecStart=/home/pi/projects/python/fauxmo/.venv/bin/fauxmo -c /home/pi/projects/python/fauxmo/config.json -v
+Restart=on-failure
+RestartSec=10s
+User=fauxmo
+
+[Install]
+WantedBy=multi-user.target
