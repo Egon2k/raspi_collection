@@ -1,17 +1,17 @@
-'''
-https://github.com/n8henrie/fauxmo
-'''
+# https://github.com/n8henrie/fauxmo
+
+echo "Installing fauxmo for home automation..."
 
 INSTALL_DIR="/home/pi/projects/python/fauxmo"
 
 # install python3
-sudo apt-get install python3 idle3
+sudo apt-get install python3 idle3 -y
 
 # create folder structure
 mkdir -p $INSTALL_DIR
 
 # download virtual environment for python
-sudo apt-get install python3-venv
+sudo apt-get install python3-venv -y
 
 # create virtual environment
 python3 -m venv $INSTALL_DIR/.venv
