@@ -6,7 +6,7 @@
     "CommandLinePlugin": {
       "DEVICES": [
         {
-            "name": "nas",
+            "name": "festplatte",
             "port": 49915,
             "on_cmd": "wakeonlan 24:5e:be:24:be:02",
             "off_cmd": ":",
