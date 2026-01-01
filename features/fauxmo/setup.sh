@@ -23,7 +23,7 @@ cd $INSTALL_DIR
 source $INSTALL_DIR/.venv/bin/activate
 
 # install fauxmo
-python3 -m pip install fauxmo
+python3 -m pip install fauxmo==0.6.0
 
 # install wakeonlan
 python3 -m pip install wakeonlan
