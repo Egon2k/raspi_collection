@@ -18,6 +18,13 @@
             "on_cmd": "wakeonlan e8:03:9a:e0:64:10",
             "off_cmd": ":",
             "use_fake_state": true
+        },
+        {
+            "name": "jellyfin",
+            "port": 49917,
+            "on_cmd": "wakeonlan 24:5f:be:70:1e:92",
+            "off_cmd": ":",
+            "use_fake_state": true
         }
       ]
     }
