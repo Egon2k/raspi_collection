@@ -5,7 +5,7 @@ echo "Installing fauxmo for home automation..."
 INSTALL_DIR="/home/pi/projects/python/fauxmo"
 
 # install python3
-sudo apt-get install python3 idle3 -y
+sudo apt-get install python3 idle -y
 
 # create folder structure
 mkdir -p $INSTALL_DIR
